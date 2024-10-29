@@ -146,6 +146,16 @@ public class StorageSettings {
 	 */
 	private boolean myLanguageSearchParameterEnabled = false;
 
+	private boolean mySubscriptionChangeQueuedImmediately = false;
+
+	public boolean isSubscriptionChangeQueuedImmediately() {
+		return mySubscriptionChangeQueuedImmediately;
+	}
+
+	public void setSubscriptionChangeQueuedImmediately(boolean theSubscriptionChangeQueuedImmediately) {
+		mySubscriptionChangeQueuedImmediately = theSubscriptionChangeQueuedImmediately;
+	}
+
 	/**
 	 * If set to true, the server will prevent the creation of Subscriptions which cannot be evaluated IN-MEMORY. This can improve
 	 * overall server performance.
