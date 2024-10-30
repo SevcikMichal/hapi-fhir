@@ -12,8 +12,16 @@
 
 	<artifactId>hapi-fhir-jpaserver-model</artifactId>
 	<packaging>jar</packaging>
-
+	<version>6.10.0-CUSTOM</version>
 	<name>HAPI FHIR JPA Model</name>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub SevcikMichal Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/SevcikMichal/hapi-fhir</url>
+		</repository>
+	</distributionManagement>
 
 	<dependencies>
 
@@ -37,7 +45,7 @@
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-base</artifactId>
-			<version>${project.version}</version>
+			<version>6.10.0</version>
 			<exclusions>
 				<exclusion>
 					<artifactId>commons-logging</artifactId>
@@ -48,37 +56,37 @@
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-jpa</artifactId>
-			<version>${project.version}</version>
+			<version>6.10.0</version>
 		</dependency>
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-server</artifactId>
-			<version>${project.version}</version>
+			<version>6.10.0</version>
 		</dependency>
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-structures-dstu2</artifactId>
-			<version>${project.version}</version>
+			<version>6.10.0</version>
 		</dependency>
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-structures-dstu3</artifactId>
-			<version>${project.version}</version>
+			<version>6.10.0</version>
 		</dependency>
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-structures-r4</artifactId>
-			<version>${project.version}</version>
+			<version>6.10.0</version>
 		</dependency>
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-structures-r5</artifactId>
-			<version>${project.version}</version>
+			<version>6.10.0</version>
 		</dependency>
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-structures-hl7org-dstu2</artifactId>
-			<version>${project.version}</version>
+			<version>6.10.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -134,12 +142,12 @@
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-caching-api</artifactId>
-			<version>${project.version}</version>
+			<version>6.10.0</version>
 		</dependency>
 		<dependency>
 			<groupId>ca.uhn.hapi.fhir</groupId>
 			<artifactId>hapi-fhir-caching-testing</artifactId>
-			<version>${project.version}</version>
+			<version>6.10.0</version>
 			<scope>test</scope>
 		</dependency>
 

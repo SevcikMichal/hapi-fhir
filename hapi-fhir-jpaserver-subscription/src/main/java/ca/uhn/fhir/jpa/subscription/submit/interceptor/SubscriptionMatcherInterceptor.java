@@ -133,7 +133,8 @@ public class SubscriptionMatcherInterceptor {
 		// Persist the message for async submission to the processing pipeline.
 		// see {@link AsyncResourceModifiedProcessingSchedulerSvc}
 
-		if (myStorageSettings.isSubscriptionChangeQueuedImmediately() && theResourceModifiedMessage.hasPayloadType(myFhirContext, "Subscription")) {
+		if (myStorageSettings.isSubscriptionChangeQueuedImmediately()
+				&& theResourceModifiedMessage.hasPayloadType(myFhirContext, "Subscription")) {
 			try {
 				myResourceModifiedConsumer.submitResourceModified(theResourceModifiedMessage);
 				return;
